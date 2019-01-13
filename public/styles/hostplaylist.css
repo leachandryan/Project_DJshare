@@ -81,6 +81,23 @@ iframe {
     font-size: 20px;
     text-align: center;
 }
+#createplaylistpanel{
+    align-content: center;
+}
+#createplaylistBTN{
+    float: left;
+    color: #f705ae;
+    background-color: darkmagenta;
+    border-color: aqua;
+}
+#createplaylist{
+    float: left;
+    width:  60%;
+    color: #f705ae;
+    background-color: darkmagenta;
+    border-color: aqua;
+    margin-left: 10%;
+}
 
     @font-face 
     {

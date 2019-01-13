@@ -1,3 +1,10 @@
+p{
+    color: #f705ae;
+}
+h3{
+    color: #f705ae;
+    font-family: 'LasEnter';
+}
 body#LoginForm{ 
     background-image:url("images/djShareLogin.jpg"); 
     background-repeat:no-repeat; 
@@ -15,6 +22,7 @@ body#LoginForm{
 .login-form .form-control {
   background: rgba(85, 1, 110, 0.651) none repeat scroll 0 0;
   border: 1px solid #f705ae;
+  color: #f705ae;
   border-radius: 4px;
   font-size: 14px;
   height: 50px;
@@ -62,11 +70,11 @@ body#LoginForm{
     position: relative;
     top: -45px;
     left: 10px;
-    color: #130250;
+    background-color: #130250;
 }
 .login-modal-body .close{
     opacity:0.75;
-    color: #130250;
+    color: #f705ae;
 }
 .modal-content{
     background-color: #130250;
@@ -88,14 +96,16 @@ body#LoginForm{
     margin-bottom: 1.5em !important;
 }
 .modal-login-form .form-control{
-    border: 0px solid #f705ae !important;
-    border-bottom:1px solid #f705ae !important;
+    border: 1px solid #f705ae !important;
+    border:1px solid #f705ae !important;
     border-radius:0 !important;
+    background-color: #130250;
+    color: #f705ae;
 }
 .modal-login-form .form-control:focus, .modal-login-form .form-control:active{
     outline:none !important;
     outline-width: 0;
-    border-color: #130250 !important;
+    border-color: #f705ae !important;
     box-shadow: 0 0 0 0.2rem transparent;
 }
 .modal-login-form{
@@ -124,15 +134,20 @@ body#LoginForm{
     padding: 10px 0;
 }
 button.btn-check-login:hover {
-    color: #130250;
-    background-color: #f58220;
-    border: 2px solid #f58220;
+    color: #f705ae;
+    background-color: #130250;
+    border: 2px solid #f705ae;
 }
 .btn-check-login {
-    color: #f58220;
-    background-color: transparent;
-    border: 2px solid #f58220;
+    color: #130250;
+    background-color: #f705ae;
+    border: 2px solid #130250;
     transition: all ease-in-out .3s;
+}
+.exitBTN{
+    color: #130250;
+    background-color: #f705ae;
+    border: 2px solid #130250;
 }
 .btn-check-login {
     display: inline-block;

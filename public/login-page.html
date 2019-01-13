@@ -30,7 +30,6 @@
                 <div class="form-group">        
                     <input type="email" class="form-control" id="inputEmail" placeholder="Email Address" value="">
                 </div>
-        
                 <div class="form-group">       
                     <input type="password" class="form-control" id="inputPassword" placeholder="Password" value="">        
                 </div>
@@ -51,7 +50,7 @@
         <div class="modal-content">      
             <!-- Modal body -->
             <div class="modal-body login-modal-body">
-                <h5 class="modal-title text-center">CREATE AN ACCOUNT</h5>
+                <h3 class="modal-title text-center">Create An Account</h3>
                 <button type="button" class="close" data-dismiss="modal">
                     <span><i class="fa fa-times-circle" aria-hidden="true"></i></span>
                 </button>        
@@ -60,18 +59,23 @@
                         <input type="name" class="form-control" required autocomplete="off">
                         <label class="form-control-placeholder" for="name">User Name</label>
                     </div> -->
-                    <div class="form-group">
-                        <input type="email" class="form-control" required autocomplete="off" id=userEmail>
-                        <label class="form-control-placeholder" for="name">Email address</label>
-                    </div>                    
-                    <div class="form-group">
-                        <input type="password" class="form-control" required autocomplete="off" id="pass1">
-                        <label class="form-control-placeholder" for="password">Password</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="password" class="form-control" required autocomplete="off" id="pass2">
-                        <label class="form-control-placeholder" for="password">Confirm Password</label>
-                    </div>
+                        <p>Your Email Address</p>
+                        <div class="form-group">        
+                            <input type="email" class="form-control" id="inputEmail" placeholder="New Email Address" value="" >
+                        </div>
+                        <br>
+                        <p>Set Your Password</p>
+                        <div class="form-group">       
+                            <input type="password" class="form-control" id="password" placeholder="New Password" value="">        
+                        </div>
+                        <div class="form-group">
+                                <input type="confirmpassword" class="form-control" required autocomplete="off" id="confirmpassword" placeholder="Confirm New Password">
+                        </div>
+                        <br>
+                        <p>Your Spotify ID</p>
+                        <div class="form-group">       
+                                <input type="spotifyID" class="form-control" id="spotifyIDfield" placeholder="Spotify ID" value="">        
+                        </div>
                     <div class="form-group forgot-pass-fau text-center">
                         <p>By Clicking "SIGN UP" you accept our</p>
                         <a href="/terms-conditions/" class="text-secondary">                        
@@ -79,7 +83,7 @@
                         </a>
                     </div>            
                     <div class="btn-check-log">
-                        <button type="button" class="btn-check-login" id="signUpBtn">SIGN UP</button>
+                        <button type="button" class="btn-check-login" id="signupBTN">SIGN UP</button>
                     </div>                    
                 </form>        
             </div>

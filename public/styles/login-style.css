@@ -62,14 +62,17 @@ body#LoginForm{
     position: relative;
     top: -45px;
     left: 10px;
-    color: #1cd8ad;
+    color: #130250;
 }
 .login-modal-body .close{
     opacity:0.75;
+    color: #130250;
 }
-
+.modal-content{
+    background-color: #130250;
+}
 .login-modal-body .close:focus, .login-modal-body .close:hover {
-    color: #39e8b0;
+    color: #130250;
     opacity: 1;
     text-decoration: none;
     outline:0;
@@ -85,14 +88,14 @@ body#LoginForm{
     margin-bottom: 1.5em !important;
 }
 .modal-login-form .form-control{
-    border: 0px solid #ced4da !important;
-    border-bottom:1px solid #adadad !important;
+    border: 0px solid #f705ae !important;
+    border-bottom:1px solid #f705ae !important;
     border-radius:0 !important;
 }
 .modal-login-form .form-control:focus, .modal-login-form .form-control:active{
     outline:none !important;
     outline-width: 0;
-    border-color: #adadad !important;
+    border-color: #130250 !important;
     box-shadow: 0 0 0 0.2rem transparent;
 }
 .modal-login-form{
@@ -121,7 +124,7 @@ body#LoginForm{
     padding: 10px 0;
 }
 button.btn-check-login:hover {
-    color: #fff;
+    color: #130250;
     background-color: #f58220;
     border: 2px solid #f58220;
 }

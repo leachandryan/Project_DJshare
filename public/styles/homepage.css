@@ -58,7 +58,7 @@ a:hover{
 
 #summary{
     margin-top: 20px;
-    background-image: linear-gradient(to right, rgba(0, 17, 255, 0.651), rgba(255, 0, 191, 0.5)); 
+    background-image: linear-gradient(to right, rgba(0, 17, 255, 0.8), rgba(255, 0, 191, 0.5)); 
     border-style: double;
     border-color: aqua;
     border-radius: 100px;
@@ -74,7 +74,9 @@ a:hover{
 #summarytext {
     margin: auto;
     width: 70%;
-    font-family: "nasa";
+    font-family: "beon";
+    font-size: 20px;
+    text-align: center;
 }
 #skills {
     columns: 4;
@@ -87,4 +89,9 @@ a:hover{
     {
         font-family: "LasEnter";
         src: url("fonts/LasEnter.ttf");
+    }
+    @font-face 
+    {
+        font-family: "beon";
+        src: url("fonts/Beon.otf");
     }

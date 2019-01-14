@@ -93,6 +93,16 @@ a:hover{
     border-width: 2px;
     font-family: none;
 }
+.btn {
+    color: #130250;
+    background-color: #f705ae;
+    border: 2px solid #130250;
+}
+.btn:hover {
+    color: #f705ae;
+    background-color: #130250;
+    border:  2px solid #f705ae;
+}
     @font-face 
     {
         font-family: "LasEnter";

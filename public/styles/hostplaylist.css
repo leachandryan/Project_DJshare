@@ -90,6 +90,11 @@ iframe {
     background-color: darkmagenta;
     border-color: aqua;
 }
+#createplaylistBTN:hover {
+    color: #f705ae;
+    background-color: #130250;
+    border:  2px solid #f705ae;
+}
 #createplaylist{
     float: left;
     width:  60%;

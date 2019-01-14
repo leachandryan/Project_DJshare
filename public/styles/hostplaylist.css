@@ -84,17 +84,6 @@ iframe {
 #createplaylistpanel{
     align-content: center;
 }
-#createplaylistBTN{
-    float: left;
-    color: #f705ae;
-    background-color: darkmagenta;
-    border-color: aqua;
-}
-#createplaylistBTN:hover {
-    color: #f705ae;
-    background-color: #130250;
-    border:  2px solid #f705ae;
-}
 #createplaylist{
     float: left;
     width:  60%;
@@ -102,6 +91,20 @@ iframe {
     background-color: darkmagenta;
     border-color: aqua;
     margin-left: 10%;
+}
+.btn {
+    color: #130250;
+    background-color: #f705ae;
+    border: 2px solid #130250;
+}
+.btn:hover {
+    color: #f705ae;
+    background-color: #130250;
+    border:  2px solid #f705ae;
+}
+#playlistList {
+    column-count: 3;
+    list-style-type: none;
 }
 
     @font-face 

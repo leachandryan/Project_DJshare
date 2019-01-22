@@ -1,5 +1,125 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+a {
+  color: aqua;
+  /* font-family: url('https://fonts.googleapis.com/css?family=Share+Tech+Mono'); */
 }
+a:hover{
+  color: #f705ae;
+  text-decoration: none;
+}
+/* iframe {
+  width: 100%;
+  padding: 0px;
+  border-style: groove;
+  border-color: #f705ae;
+  border-width: 3px;
+} */
+
+#heading{
+  width: 96%;
+  border-style: double;
+  border-color: aqua;
+  border-radius: 10px;
+  background-color: rgba(0, 255, 149, 0.6);
+  background-image: linear-gradient(to right, rgba(0, 17, 255, 0.651), rgba(248, 10, 169, 0.5)); 
+  color:rgb(0, 195, 255);
+  column-count: 4;
+  align-content: center;
+}
+
+#nav {
+  padding: 25px;
+  width: 95%;
+  margin: auto;
+  background-image: linear-gradient(to right, rgba(0, 17, 255, 0.651), rgba(252, 7, 219, 0.5)); 
+  border-style: double;
+  border-color: aqua;
+  border-radius: 50px;
+  margin-bottom: 30px;
+  column-count: 4;
+  column-gap: 0px;
+  text-align: center;
+  font-family: 'LasEnter';
+  font-size: 30px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  color: aqua;
+}
+#navitem{
+  font-size: 50px;
+  color: aqua;
+  font-family: 'LasEnter';
+  margin: auto;
+  /* width: 100%;
+  float: left; */
+}
+#navitem2{
+  font-size: 50px;
+  border-right-style: double;
+  border-left-style: double;
+  border-color: aqua;
+}
+#navitem2>a{
+  margin-left:10px;
+  margin-left:10px;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+#createplaylist{
+  float: left;
+  width:  60%;
+  color: #f705ae;
+  background-color: darkmagenta;
+  border-color: aqua;
+  margin-left: 10%;
+}
+.btn {
+  color: #130250;
+  background-color: #f705ae;
+  border: 2px solid #130250;
+}
+.btn:hover {
+  color: #f705ae;
+  background-color: #130250;
+  border:  2px solid #f705ae;
+}
+#playlistList {
+  column-count: 3;
+  list-style-type: none;
+}
+#summary{
+  margin-top: 20px;
+  background-image: linear-gradient(to right, rgba(0, 17, 255, 0.8), rgba(255, 0, 191, 0.5)); 
+  border-style: double;
+  border-color: aqua;
+  border-radius: 100px;
+  width: 75%;
+  color: aqua;
+  margin: auto;
+  margin-bottom: 20px;
+}
+#summarytext {
+  margin: auto;
+  width: 90%;
+  font-family: "beon";
+  font-size: 20px;
+  text-align: center;
+}
+
+
+  @font-face 
+  {
+      font-family: "LasEnter";
+      src: url("fonts/LasEnter.ttf");
+  }
+  @font-face 
+  {
+      font-family: "beon";
+      src: url("fonts/Beon.otf");
+  }

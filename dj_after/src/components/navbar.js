@@ -32,45 +32,45 @@ class Navbar extends Component {
         console.log(this.props);
         
         return (
+            <div id="background">
+            <video autoPlay muted loop id="myVideo">
+              <source
+                src="https://d2v9y0dukr6mq2.cloudfront.net/video/preview/GTYSdDW/dj-mixer-at-night-club_n3m4pitul__PM.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support HTML5 video.
+            </video>
             <div id="nav">
 
-                <header className="navbar App-header" id="navitem1">
+                <header id="navitem">
                     <div className="col" >
                         {loggedIn ? (
                             <section className="navbar-section" >
-                                <Link to="#" className="btn btn-link text-secondary" onClick={this.logout}>
-                                <span className="text-secondary">logout</span></Link>
+                                <Link to="#" className="btn btn-link" onClick={this.logout}>
+                                <span >logout</span></Link>
 
                             </section>
                         ) : (
-                                <section className="navbar-section" id="navitem2">
-                                    <Link to="/" className="btn btn-link text-secondary" id="navitem2">
-                                        <span className="text-secondary">home</span>
+                                <section className="navbar-section" id="navitem">
+                                    <Link to="/" className="btn btn-link" id="navitem">
+                                        <span >Home</span>
                                         </Link>
-                                    <Link to="/login" className="btn btn-link text-secondary" id="navitem2">
-                                    <span className="text-secondary">login</span>
+                                    <Link to="/login" className="btn btn-link" id="navitem">
+                                    <span >Login</span>
 				</Link>
-                                    <Link to="/signup" className="btn btn-link" id="navitem2">
-                                    <span className="text-secondary">sign up</span>
+                                    <Link to="/signup" className="btn btn-link" id="navitem">
+                                    <span >Sign Up</span>
 				</Link>
-                                    <Link to="/playlist" className="btn btn-link" id="navitem2">
-                                    <span className="text-secondary">Play List</span>
+                                    <Link to="/playlist" className="btn btn-link" id="navitem">
+                                    <span >Play List</span>
 				</Link>
                                 </section>
                             )}
                     </div>
-                    <div id="background">
-        {/* <video autoPlay muted loop id="myVideo">
-          <source
-            src="https://d2v9y0dukr6mq2.cloudfront.net/video/preview/GTYSdDW/dj-mixer-at-night-club_n3m4pitul__PM.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support HTML5 video.
-        </video> */}
-      </div>
+                    
                 </header>
             </div>
-
+            </div>
         );
 
     }

@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 import { Route, Link } from 'react-router-dom'
 import logo from '../logo.svg';
-import '../styles/App.css';
 import axios from 'axios'
 
 class Navbar extends Component {
@@ -36,7 +35,7 @@ class Navbar extends Component {
             <div id="nav">
 
                 <header className="navbar App-header" id="navitem1">
-                    <div className="col-4" >
+                    <div className="col" >
                         {loggedIn ? (
                             <section className="navbar-section" >
                                 <Link to="#" className="btn btn-link text-secondary" onClick={this.logout}>
@@ -61,13 +60,13 @@ class Navbar extends Component {
                             )}
                     </div>
                     <div id="background">
-        <video autoPlay muted loop id="myVideo">
+        {/* <video autoPlay muted loop id="myVideo">
           <source
             src="https://d2v9y0dukr6mq2.cloudfront.net/video/preview/GTYSdDW/dj-mixer-at-night-club_n3m4pitul__PM.mp4"
             type="video/mp4"
           />
           Your browser does not support HTML5 video.
-        </video>
+        </video> */}
       </div>
                 </header>
             </div>

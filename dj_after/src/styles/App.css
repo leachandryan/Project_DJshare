@@ -37,6 +37,8 @@ a:hover{
   border-radius: 50px;
   margin-bottom: 30px;
   column-count: 4;
+  column-width: 33%;
+  display: flex;
   column-gap: 10px;
   text-align: center;
   font-family: 'LasEnter';
@@ -44,10 +46,11 @@ a:hover{
   font-weight: bolder;
 }
 #navitem1{
-  font-size: 25px;
+  font-size: 50px;
   border-right-style: double;
   border-color:aqua;
   font-family: 'LasEnter';
+  column-width: 33%;
 }
 #navitem2{
   font-size: 50px;

@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import axios from 'axios'
 import { Route, Link } from 'react-router-dom'
 // components
-import Signup from './components/sign-up'
+// import Regform from './components/regform'
 import LoginForm from './components/login-form'
 import Navbar from './components/navbar'
 import Home from './components/home'
+import Playlist from './components/playlist'
+import Signup from './components/sign-up';
 
 class App extends Component {
   constructor() {
@@ -73,6 +75,11 @@ class App extends Component {
           path="/signup"
           render={() =>
             <Signup/>}
+        />
+        <Route
+          path="/playlist"
+          render={() =>
+            <Playlist/>}
         />
 
       </div>

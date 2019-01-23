@@ -46,23 +46,23 @@ class Navbar extends Component {
                     <div className="col" >
                         {loggedIn ? (
                             <section className="navbar-section" >
-                                <Link to="#" className="btn btn-link" onClick={this.logout}>
+                                <Link to="#" className="navitem" onClick={this.logout}>
                                 <span >logout</span></Link>
 
                             </section>
                         ) : (
                                 <section className="navbar-section" id="navitem">
-                                    <Link to="/" className="btn btn-link" id="navitem">
+                                    <Link to="/" className="navitem" id="navitem">
                                         <span >Home</span>
                                         </Link>
-                                    <Link to="/login" className="btn btn-link" id="navitem">
+                                    <Link to="/login" className="navitem" id="navitem">
                                     <span >Login</span>
 				</Link>
-                                    <Link to="/signup" className="btn btn-link" id="navitem">
-                                    <span >Sign Up</span>
+                                    <Link to="/signup" className="navitem" id="navitem">
+                                    <span >SignUp</span>
 				</Link>
-                                    <Link to="/playlist" className="btn btn-link" id="navitem">
-                                    <span >Play List</span>
+                                    <Link to="/playlist" className="navitem" id="navitem">
+                                    <span >PlayList</span>
 				</Link>
                                 </section>
                             )}

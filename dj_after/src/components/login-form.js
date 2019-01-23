@@ -56,9 +56,9 @@ class LoginForm extends Component {
             return <Redirect to={{ pathname: this.state.redirectTo }} />
         } else {
             return (
-                <div>
+                <div id="main">
                     <h4>Login</h4>
-                    <form className="form-horizontal">
+                    <form id="login-form" className="form-horizontal">
                         <div className="form-group">
                             <div className="col-1 col-ml-auto">
                                 <label className="form-label" htmlFor="username">Username</label>

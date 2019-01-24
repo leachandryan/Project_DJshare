@@ -1,23 +1,25 @@
-const express = require('express')
-const bodyParser = require('body-parser')
-const morgan = require('morgan')
-const session = require('express-session')
-const dbConnection = require('./database') 
-const MongoStore = require('connect-mongo')(session)
+const express = require('express');
+const bodyParser = require('body-parser');
+const morgan = require('morgan');
+const session = require('express-session');
+const dbConnection = require('./database'); 
+const MongoStore = require('connect-mongo')(session);
 const passport = require('./passport');
-const app = express()
-const PORT = 8080
+const app = express();
+const PORT = 8000;
+
+
 // Route requires
-const user = require('./routes/user')
+const user = require('./routes/user');
 
 // MIDDLEWARE
-app.use(morgan('dev'))
+app.use(morgan('dev'));
 app.use(
 	bodyParser.urlencoded({
 		extended: false
 	})
-)
-app.use(bodyParser.json())
+);
+app.use(bodyParser.json());
 
 // Sessions
 app.use(
@@ -30,14 +32,14 @@ app.use(
 )
 
 // Passport
-app.use(passport.initialize())
-app.use(passport.session()) // calls the deserializeUser
+app.use(passport.initialize());
+app.use(passport.session()); // calls the deserializeUser
 
 
 // Routes
-app.use('/user', user)
+app.use('/user', user);
 
 // Starting Server 
 app.listen(PORT, () => {
-	console.log(`App listening on PORT: ${PORT}`)
-})
+	console.log(`App listening on PORT: ${PORT}`);
+});

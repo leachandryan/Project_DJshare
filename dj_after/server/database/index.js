@@ -1,10 +1,10 @@
 //Connect to Mongo database
-const mongoose = require('mongoose')
-mongoose.Promise = global.Promise
+const mongoose = require('mongoose');
+mongoose.Promise = global.Promise;
 
 //your local database url
 //27017 is the default mongoDB port
-const uri = 'mongodb://localhost:27017/simple-mern-passport' 
+const uri = 'mongodb://localhost:27017/djAFTER'; 
 
 mongoose.connect(uri).then(
     () => { 
@@ -14,11 +14,11 @@ mongoose.connect(uri).then(
     },
     err => {
          /** handle initial connection error */ 
-         console.log('error connecting to Mongo: ')
+         console.log('error connecting to Mongo: ');
          console.log(err);
          
         }
   );
 
 
-module.exports = mongoose.connection
+module.exports = mongoose.connection;

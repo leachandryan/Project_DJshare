@@ -1,29 +1,31 @@
-import React, { Component } from 'react'
-import { Redirect } from 'react-router-dom'
-import axios from 'axios'
+import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
+import axios from 'axios';
 
 class LoginForm extends Component {
     constructor() {
-        super()
+        super();
         this.state = {
             username: '',
             password: '',
-            redirectTo: null
-        }
-        this.handleSubmit = this.handleSubmit.bind(this)
-        this.handleChange = this.handleChange.bind(this)
+            redirectTo: '',
+        };
+        this.state.username.trim();
+        this.state.password.trim();
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleChange = this.handleChange.bind(this);
   
     }
 
     handleChange(event) {
         this.setState({
             [event.target.name]: event.target.value
-        })
+        });
     }
 
     handleSubmit(event) {
-        event.preventDefault()
-        console.log('handleSubmit')
+        event.preventDefault();
+        console.log('handleSubmit');
 
         axios
             .post('/user/login', {
@@ -31,8 +33,8 @@ class LoginForm extends Component {
                 password: this.state.password
             })
             .then(response => {
-                console.log('login response: ')
-                console.log(response)
+                console.log('login response: ');
+                console.log(response);
                 if (response.status === 200) {
                     // update App.js state
                     this.props.updateUser({
@@ -45,10 +47,10 @@ class LoginForm extends Component {
                     })
                 }
             }).catch(error => {
-                console.log('login error: ')
+                console.log('login error: ');
                 console.log(error);
                 
-            })
+            });
     }
 
     render() {
@@ -69,7 +71,7 @@ class LoginForm extends Component {
                                     id="username"
                                     name="username"
                                     placeholder="Username"
-                                    value={this.state.username}
+                                    value={this.state.username.trim()}
                                     onChange={this.handleChange}
                                 />
                             </div>
@@ -83,7 +85,7 @@ class LoginForm extends Component {
                                     placeholder="password"
                                     type="password"
                                     name="password"
-                                    value={this.state.password}
+                                    value={this.state.password.trim()}
                                     onChange={this.handleChange}
                                 />
                             </div>
